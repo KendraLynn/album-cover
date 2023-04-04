@@ -1,0 +1,71 @@
+body{
+    background: url(imgs/brickwall.avif) no-repeat center fixed; 
+    background-size: cover;  
+    margin:0;
+     
+  }  
+  body:hover{
+    background: url(imgs/theface.jfif) no-repeat center fixed; 
+    background-size: cover; 
+  }
+
+  div.wall-img {
+    position: absolute;
+    top: 0;
+   background:linear-gradient(to bottom, 
+   rgba(238, 33, 33, 0.75) 12%,
+   rgba(238, 148, 45, 0.75) 24%,
+   rgba(232, 245, 53, 0.75) 36%,
+   rgba(135, 235, 96, 0.75) 48%,
+   rgba(51, 185, 238, 0.75) 60%,
+   rgba(116, 44, 231, 0.75) 72%,
+rgba(192, 46, 236, 0.25) 84%); 
+    width: 100%;
+    height: 120px;
+    
+   }
+
+/* CUSTOM FONTS*/
+@font-face {
+        font-family: floydian;
+        src: url(floyd.tff);
+    }
+
+h1{
+    font-family: floydian;
+    font-size: 88px;
+    text-align: center;
+}
+
+    .wall-txt{
+        position: absolute;
+        top: 180%;
+        left: 50%;
+        transform: translate(-50%, -25%);
+        color: rgb(10, 2, 2);            
+      }
+      /*CHANGES MAIN TEXT TO INVISABLE ON HOVER*/
+      .wall-txt:hover{
+        visibility: hidden;      
+      }
+
+
+      .hovertxt{
+        visibility: hidden; 
+      }
+     .wall-txt:hover+.hovertxt{
+        visibility: visible;
+        font-family: floydian;
+        font-size: 36px; 
+        position: absolute;
+        top: 120%;
+        left: 50%;
+        transform: translate(-50%, -25%);
+        color: rgb(223, 29, 29);    
+      }
+
+     
+
+
+   
+    
